@@ -1,3 +1,6 @@
+import os
+os.system("pip uninstall -y gradio")
+os.system("pip install gradio==3.43.0")
 from lmdeploy.serve.gradio.turbomind_coupled import *
 from lmdeploy.messages import TurbomindEngineConfig
 from lmdeploy import ChatTemplateConfig
