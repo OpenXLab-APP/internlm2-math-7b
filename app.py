@@ -124,5 +124,6 @@ with gr.Blocks(css=CSS, theme=THEME) as demo:
 
     demo.load(init, inputs=None, outputs=[state_session_id])
 
-demo.queue(concurrency_count=InterFace.async_engine.instance_num,
-            max_size=100).launch()
+# demo.queue(concurrency_count=InterFace.async_engine.instance_num,
+            # max_size=100).launch()
+demo.queue(max_size=100).launch(max_threads=InterFace.async_engine.instance_num)
