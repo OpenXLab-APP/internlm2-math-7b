@@ -86,8 +86,8 @@ with gr.Blocks(css=CSS, theme=THEME) as demo:
             reset_btn = gr.Button(value='Reset')
         with gr.Row():
             request_output_len = gr.Slider(1,
-                                            2048,
-                                            value=1024,
+                                            1024,
+                                            value=512,
                                             step=1,
                                             label='Maximum new tokens')
             top_p = gr.Slider(0.01, 1, value=1.0, step=0.01, label='Top_p')
