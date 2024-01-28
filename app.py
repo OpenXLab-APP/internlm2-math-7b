@@ -73,6 +73,7 @@ with gr.Blocks(css=CSS, theme=THEME) as demo:
 
     with gr.Column(elem_id='container'):
         gr.Markdown('## LMDeploy Playground')
+        gr.Markdown('[InternLM Math GitHub Page](https://github.com/InternLM/InternLM-Math)')
 
         chatbot = gr.Chatbot(
             elem_id='chatbot',
