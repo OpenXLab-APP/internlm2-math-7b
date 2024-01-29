@@ -7,9 +7,9 @@
 # fi
 # ls internlm/internlm2-chat-20b-4bits
 
-# if [ ! -d "internlm2-math-7b" ]
-# then
-#     echo "Downloading..."
-#     git lfs clone https://huggingface.co/internlm/internlm2-math-7b
-# fi
-# ls internlm/internlm2-math-7b
+if [ ! -d "internlm2-math-7b" ]
+then
+    echo "Downloading..."
+    git lfs clone https://huggingface.co/internlm/internlm2-math-7b
+fi
+ls internlm/internlm2-math-7b
