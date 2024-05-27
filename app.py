@@ -73,6 +73,7 @@ with gr.Blocks(css=CSS, theme=THEME) as demo:
 
     with gr.Column(elem_id='container'):
         gr.Markdown('## Internlm2-math-plus-7b')
+        gr.Markdown('This is an upgraded version of InternLM2-Math which named InternLM2-Math-Plus. Please check 1.8B/7B/20B/8x22B on our github page.')
         gr.Markdown('[InternLM Math GitHub Page](https://github.com/InternLM/InternLM-Math)')
 
         chatbot = gr.Chatbot(
