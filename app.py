@@ -7,7 +7,7 @@ from lmdeploy import ChatTemplateConfig
 
 chat_template = ChatTemplateConfig(model_name='internlm2-chat-7b', system='', eosys='', meta_instruction='')
 backend_config = TurbomindEngineConfig(model_name='internlm2-chat-7b', max_batch_size=1, cache_max_entry_count=0.05)#, model_format='awq')
-model_path = 'internlm/internlm2-math-7b'
+model_path = 'internlm/internlm2-math-plus-7b'
 
 InterFace.async_engine = AsyncEngine(
     model_path=model_path,
@@ -72,7 +72,7 @@ with gr.Blocks(css=CSS, theme=THEME) as demo:
     state_session_id = gr.State(0)
 
     with gr.Column(elem_id='container'):
-        gr.Markdown('## LMDeploy Playground')
+        gr.Markdown('## Internlm2-math-plus-7b')
         gr.Markdown('[InternLM Math GitHub Page](https://github.com/InternLM/InternLM-Math)')
 
         chatbot = gr.Chatbot(
