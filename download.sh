@@ -10,6 +10,6 @@
 if [ ! -d "internlm2-math-7b" ]
 then
     echo "Downloading..."
-    git lfs clone https://huggingface.co/internlm/internlm2-math-7b
+    git lfs clone https://code.openxlab.org.cn/OpenLMLab/InternLM2-Math-7B.git
 fi
 ls internlm/internlm2-math-7b
